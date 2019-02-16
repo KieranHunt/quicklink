@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         quicklink
 // @namespace    casa.kieran
-// @version      0.3
+// @version      0.6
 // @description  Adds Google's quicklink to every page
 // @author       Kieran Hunt
 // @match        https://*/*
@@ -13,5 +13,14 @@
 (function() {
     'use strict';
 
-    quicklink();
+    quicklink({
+    	ignores: [
+
+    		// https://news.ycombinator.com/
+    		/news\.ycombinator.com\/vote/,
+    		/news\.ycombinator.com\/hide/,
+    		/news\.ycombinator.com\/logout/
+
+    	]
+    });
 })();
