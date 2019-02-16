@@ -7,6 +7,7 @@
 // @match        https://*/*
 // @match        http://*/*
 // @require      https://unpkg.com/quicklink
+// @require      https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver
 // ==/UserScript==
 
 (function() {
